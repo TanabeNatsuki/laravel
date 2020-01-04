@@ -9,3 +9,15 @@
   <input type="submit">
 </form>
 @endsection
+
+<h1>Editing Post</h1>
+
+@if($errors->any())
+ <div class="alert alert-danger">
+   <ul>
+     @foreach($errors->all() as $error)
+      <li>{{ $error }}</li>
+     @endforeach
+   </ul>
+ </div>
+@endif
